@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="index.css" rel="stylesheet">
+
+<style>
+    /* .nav .menu{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .nav{
+        position:relative;
+        padding:20px;
+        transition: 1s;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .menu{
+        margin:0;
+        padding:0;
+        width:0;
+        overflow:hidden;
+        transition:1ms;
+    }
+
+    .nav input:checked ~ .menu{
+        width:450px;
+    }
+
+    .menu li{
+        list-style: none;
+        margin:0 10px;
+
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 400;
+        transition:2s;
+    }
+
+    .menu li a:hover{
+        color: black;
+    }
+
+    .nav input{
+        width: 40px;
+        height:40px;
+        cursor:pointer;
+        opacity:0;
+    }
+
+    .nav span{
+        margin-top: 17px;
+        position:absolute;
+        left:30px;
+        width:15px;
+        height: 2px;
+        line-height: 3px;
+        border-radius: 50px;
+        background-color: rgb(255, 255, 255);
+        pointer-events: none;
+        transition: 1s; 
+    }
+
+    .nav input:checked ~ span{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .nav span:nth-child(2){
+        transform: translate(8px) ;
+    }
+
+    .nav input:checked ~span:nth-child(2){
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .nav span:nth-child(3){
+        transform: translateY(8px);
+    }
+
+    .nav input:checked ~ span:nth-child(3){
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .nav input:checked ~span:nth-child(4){
+        transform: translateY(0) rotate(45deg);
+    } */
+    
+</style>
+
+
+
+
+</head>
+<body>
+
+    <!--Navbar-->
+    <div class="container-fluid grad">
+        <nav class="navbar fixed-top nav-scrolled">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" class="rounded-circle" width="120" height="120">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="true"
+                    aria-label="Toggle navigation"
+                    >
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="bi bi-list"></i>
+                    <!-- <i class="bi bi-three-dots"></i> -->
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="nav">
+                    <input type="checkbox"/>
+                    <span style="position: absolute;"></span>
+                    <span style="position: absolute;"></span>
+                    <span style="position: absolute;"></span>
+                    <div class="menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#skill">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">Contact</a>
+                        </li>
+                    </div>
+                </div> -->
+            </div>
+        </nav>
+        <div class="container-fluid home" id="home">
+            <div class="row">
+                <div class="col-md-2 col-xs-1"></div>
+                <div class="col-md-8 col-xs-10 hero">
+                    <p> <h1>Hi! I'm <span class="auto-type"></span></h1>
+                        <h3 class="front">FRONT END WEB DEVELOPER</h3>
+                    </p>
+                    <button type="submit" class="btn btn-outline-dark">Download Resume</button>
+                </div>
+                <div class="col-md-2 col-xs-1"></div>
+            </div>
+        </div> 
+    </div>
+
+    <!--About-->
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="about_img.png" alt="..." height="400" width="400" class="">
+            </div>
+            <div class="col-md-7">
+                <p class="text-secondary who">WHO AM I?</p>
+                <h2 class="ab_h">About Me</h2>
+                <p class="text-secondary ab_p mt-2">Hi there! I'm [Your Name], a passionate [Your Profession] with a keen interest in [Your Field/Expertise]. With [Number of Years] years of experience in [Specific Skills/Industry], I have honed my craft and developed a strong foundation in [Key Skills/Technologies].
+
+                    My journey in [Your Field] began when I discovered my fascination for [Specific Aspect or Interest]. Since then, I've been dedicated to continuously learning and growing in my field, always seeking out new challenges and opportunities to expand my knowledge and skills.
+                    
+                    Let's create something amazing together!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--projects-->
+    <div class="container" id="project">
+        <h1 class="proj">Project</h1>
+        <div class="card__container">
+            <article class="card__article">
+               <img src="p1.jpg" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Html Project</span>
+                  <h2 class="card__title">To do list</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="p2.avif" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">React Project</span>
+                  <h2 class="card__title">To do list</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+
+            <article class="card__article">
+               <img src="p3.jpeg" alt="image" class="card__img">
+
+               <div class="card__data">
+                  <span class="card__description">Tailwind css</span>
+                  <h2 class="card__title">Animatic</h2>
+                  <a href="#" class="card__button">Read More</a>
+               </div>
+            </article>
+         </div>
+        
+    </div>
+
+    <!--Contact-->
+    <div class="container" id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <h1 class="contact-me">Contact Me</h1>
+                    <form class="mx-auto mt-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3 ">
+                                    <label class="form-label">Name</label>
+                                    <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label class="form-label">E-mail</label>
+                                    <input class="form-control" id="exampleInputPassword1">
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-5">Send Me</button>
+                    </form>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container mt-5">
+            <hr>
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">Copyright &copy; 2024 Harsh Front-end web developer.</p>
+                </div>
+      
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="social-icons text-center mb-3">
+                    <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li> 
+                    <li><a class="linkedin" href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="bi bi-envelope"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
